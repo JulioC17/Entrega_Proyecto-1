@@ -14,6 +14,7 @@
     box-sizing: border-box;
 }
 
+
 a{
     text-decoration: none;
     color: var(--secondary-color);
@@ -155,6 +156,27 @@ section{
     box-shadow: 5px 5px 20px var(--terciary-color);
     text-align: center;
 }
+
+.sofa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20%;
+    padding: 1rem;
+    width: 100%;
+    box-shadow: 5px 5px 20px var(--terciary-color);
+    margin-top: 7%;
+}
+
+strong{
+    color: rgb(126, 126, 126);
+}
+
+div > h3 {
+    font-size: 2rem;
+}
+
 
 
 
