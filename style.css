@@ -1,10 +1,11 @@
+/* GENERALES */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
     font-family: roboto;
     --primary-color: rgb(0, 132, 255);
     --secondary-color: rgb(252, 252, 252);
-    --terciary-color: rgba(0, 132, 255, 0.39);
+    --terciary-color: rgba(0, 132, 255, 0.342);
 }
 
 *{
@@ -13,10 +14,29 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+li{
+    list-style-type: none;
+}
+
+/* BARRA SUPERIOR */
+.barra_superior{
+    background-color: var(--primary-color);
+    font-size:1rem;
+    color: var(--secondary-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: solid var(--secondary-color) 1px;
+}
+
+/* HEADER */
+
 header {
-    /* background-image: url(./assets/fondo_header.jpg); */
-    /* background-repeat: no-repeat; */
-    background-size:100%;
+    background-image: url(./assets/fondo_header.jpg);
+    background-repeat:no-repeat;
     background-position: center;
     color: var(--secondary-color);
     /* height: 500px; */
@@ -25,20 +45,14 @@ header {
     align-items: center;
     gap: 40px;
     justify-content: space-between;
-    background-color: rgb(153, 153, 153);
     padding: 3%;
+    border: solid 2x black;
 }
 
-
-a{
-    text-decoration: none;
-    color: var(--secondary-color);
-}
 
 .logo_header{
-    width: 20%;
+    width: 25%;
     height: 20%;
-    border: 3px solid black;
 }
 
 
@@ -48,17 +62,17 @@ a{
 
 ul{
     display: flex;
-    border: 3px solid black;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-
-li{
-    list-style-type: none;
-}
+ li:hover{
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color);
+ }
 
 .botones{
     display: flex;
@@ -83,4 +97,66 @@ li{
     border-radius: 5px;
     font-size: 1.2rem
 }
+
+
+.parrafo_header{
+    font-size: 1.5rem;
+    ;
+}
+
+h2{
+    text-align: center;
+    margin: 5%;
+    font-size: 2rem;
+    border-radius: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+/* CARTAS DE PRESENTACION */
+
+article{
+    display: flex;
+    width: 20%;
+    width: 100%;
+    justify-content: center;
+}
+
+article > section > img {
+ width: 30%
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    margin: 1%;
+    gap: 1rem;
+    width: 15% ;
+    border-radius: 2%;
+}
+
+.mejor_precio{
+    text-align: center;
+    box-shadow: 5px 5px 10px var(--terciary-color);
+}
+
+.talleres{
+    box-shadow: 5px 5px 20px var(--terciary-color);
+    text-align: center;
+}
+
+.prueba{
+    box-shadow: 5px 5px 20px var(--terciary-color);
+    text-align: center;
+}
+
+.financiacion{
+    box-shadow: 5px 5px 20px var(--terciary-color);
+    text-align: center;
+}
+
+
+
+
 
