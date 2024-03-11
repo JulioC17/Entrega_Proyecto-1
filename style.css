@@ -15,7 +15,7 @@
 }
 
 
-a{
+header > nav > ul >li > a{
     text-decoration: none;
     color: var(--secondary-color);
 }
@@ -167,6 +167,7 @@ section{
     width: 100%;
     box-shadow: 5px 5px 20px var(--terciary-color);
     margin-top: 7%;
+    margin-bottom: 0px;
 }
 
 strong{
@@ -178,7 +179,32 @@ div > h3 {
 }
 
 
+/* MAIN */
 
 
+main > div > a{
+    text-decoration: none;
+    color: var(--primary-color)
+}
 
+.main{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    justify-content: center;
+    gap: 2%;
+    text-align: center;
+    
+}
 
+main > div{
+    box-shadow: 5px 5px 20px var(--terciary-color);
+    margin: 1%;
+    border-radius: 5%;
+    transition: transform 0.3s;
+}
+
+main > div:hover{
+    transform: scale(1.1);
+}
