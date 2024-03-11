@@ -39,8 +39,8 @@ header {
     background-image: url(./assets/fondo_header.jpg);
     background-repeat:no-repeat;
     background-position: center;
+    background-size: cover;
     color: var(--secondary-color);
-    /* height: 500px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,6 +75,20 @@ ul{
     text-decoration-color: var(--primary-color);
  }
 
+ header > div > button > a{
+    color: var(--secondary-color);
+    text-decoration: none;
+ }
+
+ header > div > button{
+    transition: transform 0.3s;
+ }
+
+ header > div > button:hover{
+    transform: scale(1.1);
+ }
+
+
 .botones{
     display: flex;
     gap: 30%;
@@ -96,7 +110,8 @@ ul{
     background-color: rgb(255, 167, 3);
     padding: 1%;
     border-radius: 5px;
-    font-size: 1.2rem
+    font-size: 1.2rem;
+    
 }
 
 
@@ -207,4 +222,31 @@ main > div{
 
 main > div:hover{
     transform: scale(1.1);
+}
+
+/* FOOTER */
+
+footer{
+    background-color:var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1%;
+    margin-top: 5%;
+    display: flex;
+}
+
+footer > ul > li > a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 1rem;
+}
+
+footer > ul > li > a:hover{
+    color: rgb(255, 197, 5);
+}
+
+footer > h2{
+    font-size: 2rem;
+    margin: 0;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }
