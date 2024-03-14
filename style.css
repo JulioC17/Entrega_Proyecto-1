@@ -36,7 +36,7 @@ li{
 /* HEADER */
 
 header {
-    background-image: url(./assets/fondo_header.jpg);
+    background-image: url(./assets/fondo_header-1.png);
     background-repeat:no-repeat;
     background-position: center;
     background-size: cover;
@@ -47,7 +47,16 @@ header {
     gap: 40px;
     justify-content: space-between;
     padding: 3%;
-    border: solid 2x black;
+}
+
+
+
+
+header > nav > ul > li{
+    border: solid white 1px;
+    padding: 0.5%;
+    border-radius: 10px;
+    background-color: var(--terciary-color);
 }
 
 
@@ -68,11 +77,20 @@ ul{
     font-size: 1.8rem;
     width: 100%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 }
- li:hover{
-    text-decoration: underline;
-    text-decoration-color: var(--primary-color);
+header > nav > ul >li:hover{
+    background-color: var(--secondary-color);
+    transition: 0.3s;
+    box-shadow: 2px 2px 30px rgb(255, 255, 255);
  }
+
+ header > nav > ul > li > a:hover{
+    color: var(--primary-color);
+    transition: 0.3s;
+ }
+
+
 
  header > div > button > a{
     color: var(--secondary-color);
@@ -97,6 +115,7 @@ ul{
     text-align: center;
  }
 
+ 
 
 .botones{
     display: flex;
@@ -247,29 +266,82 @@ main > div:hover{
 /* FOOTER */
 
 footer{
+    background-color: #0070ad;
+background-image: url("https://www.transparenttextures.com/patterns/shattered-dark.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     background-color:var(--primary-color);
     color: var(--secondary-color);
-    padding: 1%;
+    padding: 4%;
     margin-top: 5%;
     display: flex;
+    flex-direction: column;
 }
 
 footer > ul > li > a {
     text-decoration: none;
     color: var(--secondary-color);
     font-size: 1rem;
+    padding: 5px;
+}
+
+
+
+.sobre{
+    font-size: 2rem;
+    margin: 0;
+    background-color: var(--terciary-color);
+    color: var(--secondary-color);
+    padding: 5px;
+}
+
+footer > h3{
+    text-align: center;
+    margin-top:3%;
+    margin-bottom: 1%;
+    border-top: solid white 2px;
+    padding: 1%;
+}
+
+.locales{
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    padding: 1%;
+    font-size: 1rem;
+    gap: 10%;
+}
+
+.locales > :nth-child(1){
+    border-right: white solid 2px;
+    padding-right: 5% ;
+}
+
+.locales > :nth-child(2){
+    border-right: white solid 2px;
+    padding-right: 5% ;
+}
+
+.copyright{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    padding: 0;
 }
 
 footer > ul > li > a:hover{
-    color: rgb(255, 197, 5);
+    transition: 0.3s;
+    background-color: var(--secondary-color);
+    box-shadow: 5px 5px 10px rgb(97, 97, 97);
+    color: var(--primary-color);
+    border-radius: 5px;
+    padding: 5px;
+
+    
 }
 
-footer > h2{
-    font-size: 2rem;
-    margin: 0;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-}
+
+
 
 
 
@@ -294,6 +366,7 @@ footer > h2{
     header > nav > ul{
         display: flex;
         flex-direction: column;
+        gap: 30px
     }
 
     header > h1{
@@ -348,6 +421,30 @@ article{
     footer > ul{
         display: flex;
         flex-direction: column;
+    }
+
+    .locales{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+
+    .locales > :nth-child(1){
+        border-right: none;
+        padding-right: 0 ;
+        padding-bottom: 5%;
+        border-bottom: white solid 2px;
+    }
+    
+    .locales > :nth-child(2){
+        border-right: none;
+        padding-right: 0 ;
+        border-bottom: white solid 2px;
+        padding-bottom: 5%;
     }
 
 }
